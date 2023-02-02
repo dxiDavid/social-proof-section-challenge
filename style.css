@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Karla:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	/*outline: 2px solid rgba(255, 0, 0, 0.281);*/
+}
+
+body{
+	font-family: 'Big Shoulders Display', cursive;
+	font-family: 'Karla', sans-serif;
+	font-family: 'League Spartan', sans-serif;
+	font-family: 'Lexend Deca', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg) ;
+	background-position: top 0rem left -1rem, bottom -12rem right -2rem;
+	background-size:30em, 80em;
+	background-repeat:no-repeat;
+}
+
+main{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: stretch;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	gap:4rem;
+	padding: 3rem;
+}
+
+.main-area{
+	display: flex;
+	flex-direction: row;
+	max-width:70rem;
+}
+
+.main-area-text{
+	max-width: 40rem;
+	display: flex;
+	flex-direction:column;
+	gap:2.2rem;
+	align-self: flex-start;
+	gap:1rem;
+}
+
+.main-area-title{
+	font-family: 'League Spartan', sans-serif;
+	font-weight: 700;
+	letter-spacing: -2px;
+	max-width: 21rem;
+}
+
+.main-area-title h1{
+	font-size: 3.2rem;
+	color: hsl(300, 43%, 22%);
+}
+
+.main-area-paragraph{
+	max-width: 25rem;
+}
+
+.main-area-paragraph p {
+	font-family: 'League Spartan', sans-serif;
+	font-size: 1.2rem;
+	font-weight:500;
+	line-height: 1.5rem;
+	color: hsl(300, 11%, 48%)
+}
+
+.ratings{
+	display: flex;
+	flex-direction: column;
+	align-self: flex-end;
+	gap:1rem;
+	max-width: 90rem;
+	margin-left: auto;
+	font-family: 'League Spartan', sans-serif;
+	font-weight: 700;
+	color: hsl(300, 43%, 22%);
+}
+
+.reviews, .report-guru, .best-in-tech{
+	display: flex;
+	flex-direction: row;
+	gap:2rem;
+	background-color: hsl(300, 24%, 96%);
+	padding:1rem 2rem;
+	border-radius: 8px;
+	position: relative;
+}
+
+.stars li{
+	list-style: none;
+	display: inline-block;
+}
+
+.reviews{
+	right:8rem;
+}
+
+.report-guru{
+	right:5rem;
+}
+
+.best-in-tech{
+	right:2rem;
+}
+
+.testimonials{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color:white;
+	gap:2rem;
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	gap:1.5rem;
+	max-width: 22.2rem;
+	background-color: hsl(300, 43%, 22%);
+	padding:3.2rem 2.3rem;
+	border-radius: 8px;
+	font-family: 'League Spartan', sans-serif;
+}
+
+.card-2{
+	transform: translateY(1.1rem);
+}
+
+.card-3{
+	transform: translateY(2.2rem);
+}
+
+.person-details{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap:1.5rem;
+}
+
+.person-details img{
+	width:15%;
+	height: 90%;
+	border-radius: 50%;
+}
+
+.person-details h2{
+	font-size: 1rem;
+}
+
+.person-details span{
+	font-size: 1rem;
+	color: hsl(333, 80%, 67%);
+}
+
+.name-and-status{
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+}
+
+.message p{
+	font-size:1rem;
+	font-weight: 300;
+	line-height: 1.4rem;
+}
+
+@media screen and (max-width: 1024px) {
+	
+	.container{
+		padding: 2rem;	
+	}
+	.main-area{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		align-self: center;
+		gap: 2rem;
+		max-width: 60rem;
+	}
+	.main-area-text{
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	.main-area-title{
+		align-self: center;
+	}
+	.main-area-title, .main-area-paragraph{
+		min-width: 100%;
+	}
+	.ratings{
+		margin: 0;
+		align-self: center;
+		min-width: 100%;
+	}
+	.reviews, .report-guru, .best-in-tech{
+		right:0rem;
+	}
+	.testimonials{
+		display: flex;
+		flex-direction: column;
+	}
+	.card-2, .card-3{
+		transform: none;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.reviews, .report-guru, .best-in-tech{
+		flex-direction: column;
+		text-align: center;
+		gap:1rem;
+	}
+	.stars{
+		align-self: center;
+	}
+}
