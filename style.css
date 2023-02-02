@@ -97,7 +97,7 @@ main{
 	position: relative;
 }
 
-.stars li{
+.stars ul li{
 	list-style: none;
 	display: inline-block;
 }
